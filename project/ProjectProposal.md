@@ -23,6 +23,8 @@ prices of future house listings.
 
 <Add one sentence for the *Project Proposal* assignment submission that captures the project statement.>
 
+The Predicting Housing Prices project aims to develope a machine learning model that can accurately estimate the sale prices of houses with regards to varying factors such as location and size.
+
 <Expand the section with few sentences for the *Project Progress* assignment submission> 
 * Give a clear and complete statement of the problem.
 * What is the benchmark you are using.  Why?  
