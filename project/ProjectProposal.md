@@ -23,7 +23,7 @@ prices of future house listings.
 
 <Add one sentence for the *Project Proposal* assignment submission that captures the project statement.>
 
-The Predicting Housing Prices project aims to develope a machine learning model that can accurately estimate the sale prices of houses with regards to varying factors such as location and size.
+The Predicting Housing Prices project aims to develope a machine learning model that can accurately estimate the sale prices of houses with regards to varying factors such as location and size, as to provide insight for future home buyers and sellers in making informed decisions.
 
 <Expand the section with few sentences for the *Project Progress* assignment submission> 
 * Give a clear and complete statement of the problem.
@@ -36,6 +36,10 @@ The Predicting Housing Prices project aims to develope a machine learning model 
 ## Dataset 
 
 <Add highlights on the dataset, specifically the size in instances and attributes for **Project Proposal**>
+
+My dataset from Zillow provides a Region Name, State, Metro, County Name, Size Rank, and the median housing price of each month from 1996 to 2016. Pruning the older data and the Nan values I will be able to train a predictive model that will account for regional variations and trends in the housing market over time.
+
+[Download CSV File](./City_Zhvi_AllHomes.csv)
 
 <Complete the following for the **Project Progress**>
 * Description of the dataset (dimensions, names of variables with their description) If in doubt, use 3.1-3.3. [Datasheets For Datasets](https://arxiv.org/abs/1803.09010) as a guideline.  
