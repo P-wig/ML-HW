@@ -11,12 +11,12 @@
 
 ## Project Summary
 
-<Complete for *Project Proposal* assignment submission to give idea to the reader what youa re trying to do and how> 
+<Complete for *Project Proposal* assignment submission to give idea to the reader what youre trying to do and how> 
 
 The purpose of the Predicting Housing Prices project is to develope a machine learning model that is capable of estimating the sale prices of houses based on various features such as location and size demographics. The main objective of this project is to train a predictive model based on real estate data, to accurately and effectively estimate the 
 prices of future house listings.
 
-<Fully rewrite the summary as the last step for the *Project Submission* assignment: github.com repositories on how people shortblurb thre project. It is a standalone section. It is written to give the reader a summary of your work. Be sure to specific, yet brief.>
+<Fully rewrite the summary as the last step for the *Project Submission* assignment: github.com repositories on how people shortblurb the project. It is a stand alone section. It is written to give the reader a summary of your work. Be sure to specific, yet brief.>
 
 
 ## Problem Statement 
