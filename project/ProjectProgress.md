@@ -126,6 +126,8 @@ I am still evaluating baseline learning models, all I have acomplished pretains 
 
 < **Project Progress** should include experiments you have completed thus far.>
 
+I have not yet touched on any models as I want more input on my provided data plots so I may take more educated steps in selecting a strong model to fit my data.
+
 <**Project Submission** should only contain final version of the experiments. Please use visualizations whenever possible.>
 * Describe how did you evaluate your solution 
   * What evaluation metrics did you use? 
