@@ -97,6 +97,8 @@ I have generated a pairplot to visualize relationships between variables, and se
   * If yes, include steps here.  
 * What did you consider but *not* use? Why? 
 
+I have considered both dimensionality reduction and scaling in my experiment, and utilized a Standard Scaler, and PCA and t-SNE dimensionality redicing mechanisms.
+
 <Expand and complete for **Project Submission**>
 
 
@@ -107,6 +109,8 @@ I have generated a pairplot to visualize relationships between variables, and se
 * What is your baseline evaluation setup? Why? 
 * Describe the ML methods that you consider using and what is the reason for their choice? 
    * What is the family of machine learning algorithms you are using and why?
+
+I am still evaluating baseline learning models, all I have acomplished pretains to preprocessing and data evaluation on variable relations and dimensionality. I an considering using a dataset balancing tool such as RandomOverSampler or SMOTE to to improve the relative performance of my model after I have done dry tests on the imbalanced dataset. I have considered using ensemble machine learning algorithms as they yield the most robust fits for multidimensional data.
 
 <Expand and complete for **Project Submission**>
 
