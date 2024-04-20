@@ -51,6 +51,20 @@ My dataset from Zillow provides a Region Name, State, Metro, County Name, Size R
 * Description of the dataset (dimensions, names of variables with their description) If in doubt, use 3.1-3.3. [Datasheets For Datasets](https://arxiv.org/abs/1803.09010) as a guideline.  
 * If you are using benchmarks, describe the data in details. If you are collecting data, describe why, how, data format, volume, labeling, etc.>
 
+The dimensions of the raw data was 2226382 rows by 12 columns. After preprocessing the dataset is reduced to 1360627 by 6.
+brokered_by = encoded value for agency the brokered the house
+status = boolean value for sold or for_sale
+price = float value used as the experiments target value
+bed = integer attribute for number of bedrooms
+bath = integer attribute for number of bathrooms
+acre_lot = double value to indicate the squared area in acres the house resides
+street = encoded value for street location
+city = string value to label what city the house resides
+state = string value to label what state the house resides
+zip_code = numerical label for house location
+house_size = float value to indicate square footage of the house
+prev_sold_date = data value of when house was sold
+
 <Expand and complete for *Project Submission*>
 
 * What Processing Tools have you used.  Why?  Add final images from jupyter notebook. Use questions from 3.4 of the [Datasheets For Datasets](https://arxiv.org/abs/1803.09010) paper for a guide.>  
