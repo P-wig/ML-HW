@@ -31,6 +31,12 @@ The Predicting Housing Prices project aims to develope a machine learning model 
 * Where does the data come from, what are its characteristics? Include informal success measures (e.g. accuracy on cross-validated data, without specifying ROC or precision/recall etc) that you planned to use. 
 * What do you hope to achieve?>
 
+The grand total of an estate's value is compiled with a multitude of factors centered around size, location, and ammenities. The problem I am solving is a way to estamate a median price point for a house in a multitude of locations, with a multitude of variation between house ammenities.
+
+the benchmarks I am using to train my learning model are square footage, number of bedrooms and bathrooms, acre lot, and zip code location.
+
+The data was retrieved from a recently updated kaggle library. the characteristics of the data are again, brokered_by, status, price, bed, bath, acre_lot, street, city, state, zip_code, house_size, and prev_sold_date. I plan to train the model to accurately predict the relative price of a house given the vital contributing factors data. I hope that my model is able to accurately fit the training data, and make predictions with a low margine of error.
+
 <Finalize for the *Project Submission* assignment submission> 
 
 ## Dataset 
@@ -39,7 +45,7 @@ The Predicting Housing Prices project aims to develope a machine learning model 
 
 My dataset from Zillow provides a Region Name, State, Metro, County Name, Size Rank, and the median housing price of each month from 1996 to 2016. Pruning the older data and the Nan values I will be able to train a predictive model that will account for regional variations and trends in the housing market over time.
 
-[Download CSV File](./City_Zhvi_AllHomes.csv)
+[Download CSV File](./realtor-data.csv)
 
 <Complete the following for the **Project Progress**>
 * Description of the dataset (dimensions, names of variables with their description) If in doubt, use 3.1-3.3. [Datasheets For Datasets](https://arxiv.org/abs/1803.09010) as a guideline.  
