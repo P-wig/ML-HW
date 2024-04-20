@@ -75,6 +75,16 @@ prev_sold_date = data value of when house was sold
 * What EDA graphs you are planning to use? 
 * Why? - Add figures if any
 
+I have generated a pairplot to visualize relationships between variables, and several scatterplots for PCA and t-SNE to visualizes my preprocessed data in reduced dimensions
+
+![Dataframe Pair Plot](./pairplot.png)
+
+![PCA scatterplot 1](./PCA12.png)
+![PCA scatterplot 2](./PCA23.png)
+![PCA scatterplot 3](./PCA13.png)
+
+![t-SNE scatterplot](./TSNE.png)
+
 <Expand and complete for the **Project Submission**>
 * Describe the methods you explored (usually algorithms, or data wrangling approaches). 
   * Include images. 
