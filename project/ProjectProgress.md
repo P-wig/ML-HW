@@ -18,6 +18,7 @@ prices of future house listings.
 
 <Fully rewrite the summary as the last step for the *Project Submission* assignment: github.com repositories on how people shortblurb the project. It is a stand alone section. It is written to give the reader a summary of your work. Be sure to specific, yet brief.>
 
+The purpose of the Predicting Housing Prices project is to develope a machine learning model that is capable of estimating the sale prices of houses based on various features such as location and size demographics. The main objective of this project is to train a predictive model based on real estate data, to accurately and effectively estimate the prices of future house listings. This experiment references an existing XGBoost model that has been proven effective on other housing price datasets. The purpose of this experiment is to tune the new dataset to the XGBoost model and using it as a baseline for testing different models for potentially stronger fits.
 
 ## Problem Statement 
 
@@ -75,7 +76,7 @@ prev_sold_date = data value of when house was sold
 * What EDA graphs you are planning to use? 
 * Why? - Add figures if any
 
-I have generated a pairplot to visualize relationships between variables, and several scatterplots for PCA and t-SNE to visualizes my preprocessed data in reduced dimensions
+I have generated a pairplot to visualize relationships between variables, and several scatterplots for PCA and t-SNE to visualizes my preprocessed data in reduced dimensions. there were only 6 dimensions to my dataset, so the PCA did not provide any discernible insight on my dataset
 
 ![Dataframe Pair Plot](./pairplot.png)
 
@@ -97,7 +98,7 @@ I have generated a pairplot to visualize relationships between variables, and se
   * If yes, include steps here.  
 * What did you consider but *not* use? Why? 
 
-I have considered both dimensionality reduction and scaling in my experiment, and utilized a Standard Scaler, and PCA and t-SNE dimensionality redicing mechanisms.
+I have considered both dimensionality reduction and scaling in my experiment, and utilized a Standard Scaler, and PCA and t-SNE dimensionality reducing mechanisms.
 
 <Expand and complete for **Project Submission**>
 
