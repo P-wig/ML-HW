@@ -41,8 +41,6 @@ The data was retrieved from a recently updated kaggle library. the characteristi
 
 My dataset from Zillow provides a Region Name, State, Metro, County Name, Size Rank, and the median housing price of each month from 1996 to 2016. Pruning the older data and the Nan values I will be able to train a predictive model that will account for regional variations and trends in the housing market over time.
 
-[Download CSV File](./realtor-data.csv)
-
 <Complete the following for the **Project Progress**>
 * Description of the dataset (dimensions, names of variables with their description) If in doubt, use 3.1-3.3. [Datasheets For Datasets](https://arxiv.org/abs/1803.09010) as a guideline.  
 * If you are using benchmarks, describe the data in details. If you are collecting data, describe why, how, data format, volume, labeling, etc.>
@@ -153,8 +151,8 @@ the results are as follows:
 ![balanced dataset](./Results/XGBoosting2.png)
 
 **Linear regression model**
-![unbalanced dataset](./Results/linear1.png)
-![balanced dataset](./Results/linear2.png)
+![unbalanced dataset](./Results/Linear1.png)
+![balanced dataset](./Results/Linear2.png)
 
 **Ridge regression model**
 ![unbalanced dataset](./Results/RR1.png)
@@ -176,6 +174,11 @@ the results are as follows:
 ![unbalanced dataset](./Results/GradientBoosting1.png)
 ![balanced dataset](./Results/GradientBoosting2.png)
 
+Initially the linear model was the baseline model as it was the simplest model to train to the dataset. Afterward the XGBoosting model was incorperated as the baseline as it had a stronger foundation with housing data as prescribed by kaggle.
+
+The experiment yielded the random forest regression model as the strongest model for the dataset, as it scored highest in the unbalanced dataset trials by a thin margin at 0.5603 compared to the XGBoost baseline, and scored the highest in the balanced dataset trails by a wider margine with a score of 0.6112.
+
+However none of the scores in either trial were high enough to be considered a solid fit for the dataset. Suggesting that a new model needs to be evaluated or the current state of the dataset is unoperable and would require bootstrapping of further dimensions of data or just a completely new dataset with with more robust data to train off of.
 
 
 ## Conclusion
