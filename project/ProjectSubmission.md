@@ -62,7 +62,7 @@ This experiment utilizes processing tools such as Scikit-learn for its machine l
 
 I have generated a pairplot to visualize relationships between variables, and several scatterplots for PCA and t-SNE to visualizes my preprocessed data in reduced dimensions. there were only 6 dimensions to my dataset, so the PCA did not provide any discernible insight on my dataset.
 
-![Dataframe Pair Plot](./pairplot.png)
+![Dataframe Pair Plot](./EDA/pairplot.png)
 
 
 * Describe the methods you explored (usually algorithms, or data wrangling approaches). 
