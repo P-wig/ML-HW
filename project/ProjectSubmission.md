@@ -132,10 +132,6 @@ during the first round of testing on the unbalanced dataset the random forest mo
 
 ## Experiments 
 
-< **Project Progress** should include experiments you have completed thus far.>
-
-I have not yet touched on any models as I want more input on my provided data plots so I may take more educated steps in selecting a strong model to fit my data.
-
 <**Project Submission** should only contain final version of the experiments. Please use visualizations whenever possible.>
 * Describe how did you evaluate your solution 
   * What evaluation metrics did you use? 
@@ -145,6 +141,8 @@ I have not yet touched on any models as I want more input on my provided data pl
   * How did your model do in comparison to theirs? 
   * Show graphs/tables with results 
   * Present error analysis and suggestions for future improvement. 
+
+I evaluated my soulution through a generic R^2 score and visual scatterplot comparing predicted values to actual target values for wach learning model under the conditions of normalized unbalanced data, and normalized balanced data
 
 ## Conclusion
 <Complete for the **Project Submission**>
