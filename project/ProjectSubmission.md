@@ -83,11 +83,13 @@ I have generated a pairplot to visualize relationships between variables, and se
   * Include images. 
 * Justify methods for feature normalization selection and the modeling approach you are planning to use. 
 
-![PCA scatterplot 1](./PCA12.png)
-![PCA scatterplot 2](./PCA23.png)
-![PCA scatterplot 3](./PCA13.png)
+![PCA scatterplot 1](./EDA/PCA12.png)
+![PCA scatterplot 2](./EDA/PCA23.png)
+![PCA scatterplot 3](./EDA/PCA13.png)
 
-![t-SNE scatterplot](./TSNE.png)
+![t-SNE scatterplot](./EDA/TSNE.png)
+
+![Data imbalance](./EDA/data_imbalance.png)
 
 
 The first step of the experiment was analyzing the columns in the dataset and determining which columns were valuable to be included in the training set and which were not. This eliminated the columns containing string labels for location data and bool values for if the row was for sale or already sold.
@@ -142,7 +144,39 @@ during the first round of testing on the unbalanced dataset the random forest mo
   * Show graphs/tables with results 
   * Present error analysis and suggestions for future improvement. 
 
-I evaluated my soulution through a generic R^2 score and visual scatterplot comparing predicted values to actual target values for wach learning model under the conditions of normalized unbalanced data, and normalized balanced data
+I evaluated my soulution through a generic R^2 score and visual scatterplot comparing predicted values to actual target values for wach learning model under the conditions of normalized unbalanced data, and normalized balanced data.
+
+the results are as follows:
+
+**XGBoost model**
+![unbalanced dataset](./EDA/PCA12.png)
+![balanced dataset](./EDA/PCA12.png)
+
+**Linear regression model**
+![unbalanced dataset](./EDA/PCA12.png)
+![balanced dataset](./EDA/PCA12.png)
+
+**Ridge regression model**
+![unbalanced dataset](./EDA/PCA12.png)
+![balanced dataset](./EDA/PCA12.png)
+
+**Lasso regression model**
+![unbalanced dataset](./EDA/PCA12.png)
+![balanced dataset](./EDA/PCA12.png)
+
+**Polynomial regression model**
+![unbalanced dataset](./EDA/PCA12.png)
+![balanced dataset](./EDA/PCA12.png)
+
+**Random forest model**
+![unbalanced dataset](./EDA/PCA12.png)
+![balanced dataset](./EDA/PCA12.png)
+
+**Gradient boosting model**
+![unbalanced dataset](./EDA/PCA12.png)
+![balanced dataset](./EDA/PCA12.png)
+
+
 
 ## Conclusion
 <Complete for the **Project Submission**>
