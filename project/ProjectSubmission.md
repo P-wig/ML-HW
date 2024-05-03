@@ -131,24 +131,24 @@ I evaluated my soulution through a generic R^2 score and visual scatterplot comp
 the results are as follows:
 
 **XGBoost model**
-![unbalanced dataset](./Results/XGBoosting1.png)
-![balanced dataset](./Results/XGBoosting2.png)
+* ![unbalanced dataset](./Results/XGBoosting1.png)
+* ![balanced dataset](./Results/XGBoosting2.png)
 
 **Linear regression model**
-![unbalanced dataset](./Results/Linear1.png)
-![balanced dataset](./Results/Linear2.png)
+* ![unbalanced dataset](./Results/Linear1.png)
+* ![balanced dataset](./Results/Linear2.png)
 
 **Ridge regression model**
-![unbalanced dataset](./Results/RR1.png)
-![balanced dataset](./Results/RR2.png)
+* ![unbalanced dataset](./Results/RR1.png)
+* ![balanced dataset](./Results/RR2.png)
 
 **Lasso regression model**
-![unbalanced dataset](./Results/LASSO1.png)
-![balanced dataset](./Results/LASSO2.png)
+* ![unbalanced dataset](./Results/LASSO1.png)
+* ![balanced dataset](./Results/LASSO2.png)
 
 **Polynomial regression model**
-![unbalanced dataset](./Results/Poly1.png)
-![balanced dataset](./Results/Poly2.png)
+* ![unbalanced dataset](./Results/Poly1.png)
+* ![balanced dataset](./Results/Poly2.png)
 
 **Random forest model**
 ![unbalanced dataset](./Results/RandomForest1.png)
