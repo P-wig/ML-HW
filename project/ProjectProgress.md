@@ -77,16 +77,22 @@ I have generated a pairplot to visualize relationships between variables, and se
 
 ![Dataframe Pair Plot](./pairplot.png)
 
+
+<Expand and complete for the **Project Submission**>
+* Describe the methods you explored (usually algorithms, or data wrangling approaches). 
+  * Include images. 
+* Justify methods for feature normalization selection and the modeling approach you are planning to use. 
+
 ![PCA scatterplot 1](./PCA12.png)
 ![PCA scatterplot 2](./PCA23.png)
 ![PCA scatterplot 3](./PCA13.png)
 
 ![t-SNE scatterplot](./TSNE.png)
 
-<Expand and complete for the **Project Submission**>
-* Describe the methods you explored (usually algorithms, or data wrangling approaches). 
-  * Include images. 
-* Justify methods for feature normalization selection and the modeling approach you are planning to use. 
+
+The first step of the experiment was analyzing the columns in the dataset and determining which columns were valuable to be included in the training set and which were not. This eliminated the columns containing string labels for location data and bool values for if the row was for sale or already sold.
+The second step was to clean the truncated dataset by finding and eliminating all rows with NULL or Nan values using the prebuilt pandas methods. The dataset is then split between the target column 'price' and the rest of the remaining columns 'bed, bath, acre_lot, zip_code, and house_size' as subsets Y and X. 
+The X subsets is then normalized using a standard scaler and then double checked for Nan values. 
 
 ## Data Preprocessing 
 
@@ -95,7 +101,7 @@ I have generated a pairplot to visualize relationships between variables, and se
   * If yes, include steps here.  
 * What did you consider but *not* use? Why? 
 
-I have considered both dimensionality reduction and scaling in my experiment, and utilized a Standard Scaler, and PCA and t-SNE dimensionality reducing mechanisms.
+Dimensionality Reduction was considered in this experiment, however was not used in the data normalization as the dataset did not contain enough dimensions to make use of it. A Standard Scaler was utilized, but the PCA and t-SNE dimensionality reducing mechanisms were tested and unused in the model testing phase.
 
 <Expand and complete for **Project Submission**>
 
