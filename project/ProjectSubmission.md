@@ -114,7 +114,8 @@ Dimensionality Reduction was considered in this experiment, however was not used
 * Describe the ML methods that you consider using and what is the reason for their choice? 
    * What is the family of machine learning algorithms you are using and why?
 
-I am still evaluating baseline learning models, all I have acomplished pretains to preprocessing and data evaluation on variable relations and dimensionality. I an considering using a dataset balancing tool such as RandomOverSampler or SMOTE to to improve the relative performance of my model after I have done dry tests on the imbalanced dataset. I have considered using ensemble machine learning algorithms as they yield the most robust fits for multidimensional data.
+The XGBoost model denoted by kaggle is a model that was effective on other housing datasets, and thus sets a baseline for what the experimental models should strive to achieve. So the first model test on this experiments dataset was the XGBoost which provided baseline scores on our dataset, scoring similar to the gradient boosting model from scikit-learn at 0.4780 compared to 0.4791.
+I then experimented with linear models such as linear regression, ridge regression, lasso, and polynomial at base 2, however these models performed the weakest compared to the ensemble models. The ensemble models that were tester were the random forest model and the gradient boosting model provided by scikit-learn. I did attempt using support vector machine regression, however it proved to be massively time consuming with the shape of the experiments dataset and had to be removed from the test runs.
 
 <Expand and complete for **Project Submission**>
 
