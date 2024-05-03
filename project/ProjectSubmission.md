@@ -11,13 +11,9 @@
 
 ## Project Summary
 
-<Fully rewrite the summary as the last step for the *Project Submission* assignment: github.com repositories on how people shortblurb the project. It is a stand alone section. It is written to give the reader a summary of your work. Be sure to specific, yet brief.>
-
 The purpose of the Predicting Housing Prices project is to develope a machine learning model that is capable of estimating the sale prices of houses based on various features such as location and size demographics. The main objective of this project is to train a predictive model based on real estate data, to accurately and effectively estimate the prices of future house listings. This experiment references an existing XGBoost model that has been proven effective on other housing price datasets. The purpose of this experiment is to tune the new dataset to the XGBoost model and using it as a baseline for testing different models for potentially stronger fits.
 
 ## Problem Statement 
-
-<Add one sentence for the *Project Proposal* assignment submission that captures the project statement.>
 
 The Predicting Housing Prices project aims to develope a machine learning model that can accurately estimate the sale prices of houses with regards to varying factors such as location and size, as to provide insight for future home buyers and sellers in making informed decisions.
 
@@ -33,15 +29,10 @@ the benchmarks I am using to train my learning model are square footage, number 
 
 The data was retrieved from a recently updated kaggle library. the characteristics of the data are again, brokered_by, status, price, bed, bath, acre_lot, street, city, state, zip_code, house_size, and prev_sold_date. I plan to train the model to accurately predict the relative price of a house given the vital contributing factors data. I hope that my model is able to accurately fit the training data, and make predictions with a low margine of error.
 
-<Finalize for the *Project Submission* assignment submission> 
-
 ## Dataset 
-
-<Add highlights on the dataset, specifically the size in instances and attributes for **Project Proposal**>
 
 My dataset from Zillow provides a Region Name, State, Metro, County Name, Size Rank, and the median housing price of each month from 1996 to 2016. Pruning the older data and the Nan values I will be able to train a predictive model that will account for regional variations and trends in the housing market over time.
 
-<Complete the following for the **Project Progress**>
 * Description of the dataset (dimensions, names of variables with their description) If in doubt, use 3.1-3.3. [Datasheets For Datasets](https://arxiv.org/abs/1803.09010) as a guideline.  
 * If you are using benchmarks, describe the data in details. If you are collecting data, describe why, how, data format, volume, labeling, etc.>
 
@@ -59,7 +50,6 @@ zip_code = numerical label for house location
 house_size = float value to indicate square footage of the house
 prev_sold_date = data value of when house was sold
 
-<Expand and complete for *Project Submission*>
 
 * What Processing Tools have you used.  Why?  Add final images from jupyter notebook. Use questions from 3.4 of the [Datasheets For Datasets](https://arxiv.org/abs/1803.09010) paper for a guide.> 
 
@@ -67,7 +57,6 @@ This experiment utilizes processing tools such as Scikit-learn for its machine l
 
 ## Exploratory Data Analysis 
 
-<Complete for **Project Progress**>
 * What EDA graphs you are planning to use? 
 * Why? - Add figures if any
 
@@ -76,7 +65,6 @@ I have generated a pairplot to visualize relationships between variables, and se
 ![Dataframe Pair Plot](./pairplot.png)
 
 
-<Expand and complete for the **Project Submission**>
 * Describe the methods you explored (usually algorithms, or data wrangling approaches). 
   * Include images. 
 * Justify methods for feature normalization selection and the modeling approach you are planning to use. 
@@ -96,14 +84,11 @@ The X subsets is then normalized using a standard scaler and then double checked
 
 ## Data Preprocessing 
 
-<Complete for *Project Progress*>
 * Have you considered Dimensionality Reduction or Scaling? 
   * If yes, include steps here.  
 * What did you consider but *not* use? Why? 
 
 Dimensionality Reduction was considered in this experiment, however was not used in the data normalization as the dataset did not contain enough dimensions to make use of it. A Standard Scaler was utilized, but the PCA and t-SNE dimensionality reducing mechanisms were tested and unused in the model testing phase.
-
-<Expand and complete for **Project Submission**>
 
 
 ## Machine Learning Approaches
@@ -117,7 +102,6 @@ Dimensionality Reduction was considered in this experiment, however was not used
 The XGBoost model denoted by kaggle is a model that was effective on other housing datasets, and thus sets a baseline for improvement or what the experimental models should strive to achieve. So the first model test on this experiments dataset was the XGBoost which provided baseline scores on our dataset to improve upon, scoring similar to the gradient boosting model from scikit-learn at 0.4780 compared to 0.4791.
 I then experimented with linear models such as linear regression, ridge regression, lasso, and polynomial at base 2, however these models performed the weakest compared to the ensemble models. The ensemble models that were tester were the random forest model and the gradient boosting model provided by scikit-learn. I did attempt using support vector machine regression, however it proved to be massively time consuming with the shape of the experiments dataset and had to be removed from the test runs. The ensemble learning models outperfomed the linear models as predicted, as ensemble learning models such as the random forest and gradient boosting  are built to handle non-linearity and multidimensionalism in vastly large datasets.
 
-<Expand and complete for **Project Submission**>
 
 * Describe the methods/datasets (you can have unscaled, selected, scaled version, multiple data farmes) that you ended up using for modeling. 
 
@@ -178,11 +162,10 @@ Initially the linear model was the baseline model as it was the simplest model t
 
 The experiment yielded the random forest regression model as the strongest model for the dataset, as it scored highest in the unbalanced dataset trials by a thin margin at 0.5603 compared to the XGBoost baseline, and scored the highest in the balanced dataset trails by a wider margine with a score of 0.6112.
 
-However none of the scores in either trial were high enough to be considered a solid fit for the dataset. Suggesting that a new model needs to be evaluated or the current state of the dataset is unoperable and would require bootstrapping of further dimensions of data or just a completely new dataset with with more robust data to train off of.
+None of the scores in either trial were high enough to be considered a good fit for the dataset, the highest recorded score was 0.6112 by random forest regression, and even then it was still an underfitted model. Suggesting that a new model needs to be evaluated or the current state of the dataset is unoperable and would require bootstrapping of further dimensions of data or just a completely new dataset with with more robust data to train off of.
 
 
 ## Conclusion
-<Complete for the **Project Submission**>
 * What did not work? 
 * What do you think why? 
 * What were approaches, tuning model parameters you have tried? 
@@ -190,6 +173,15 @@ However none of the scores in either trial were high enough to be considered a s
 * When describing methods that didn't work, make clear how they failed and any evaluation metrics you used to decide so. 
 * How was that a data-driven decision? Be consise, all details can be left in .ipynb
 
+From both sets of trails it was clear that linear models were not going to viable fits. All the models including the XGBoosting model had severely underfit the testing data, which no model scoring higher than a 0.6112 R^2 score. Support vector machine was not a viable model for this dataset as the severely unbalanced shape of the dataset (1360627, 6) would yield massive time consumption of upwards of 2 hours per test run, and at one point consuming nearly all 32 GB of RAM available on my hardware, thus setting the SVM regression model as an unfeasable model for the dataset, with no guarentee that it would fit.
+
+The reasoning behind these results is likely due to the lack of dimensionality in the experiments dataset, as the 'price' target variable is a highly volatile variable and would likely require more information than general ZIP location, bedrooms, bathrooms, and acre plot, and square footage, to thoroughly analyze and predict.
+
+I followed the same basic steps of normalization provided in the practice assignments by filtering out unused columns and Nan values and provide scaling of the dataset. In terms of regularization I did attempt with Ridge and Lasso regression models and exponentially incrementing their regularization parameter, however this did not provide any significant change in score for those models.
+
+The metric I used to evaluate the models was the R^2 score provided in all scikit-learn models, and while some outperformed others, none were high enough to discern as a solid fit for this experiment. A satisfactory score would have ranged in the 0.8-0.9, however after phases of regularization and normalization, none of the models achieved close to the desired results. this is again likely due to a lack of dimensionality in the experiments dataset.
+
+Given to poor results of the models and the drastic decrease in accuracy of the XGBoost baseline model, it is most likely due to a poor dataset with a lack of dimensionality that is the root cause of the underwhelming performance. The baseline model should have been able to predict with solid accuracy given a robust dataset such as the one demoed on kaggle, and then the testing models would compete to better fit the dataset.
  
 ## Submission Format
 1. Python code with markdown documentation, images saved in .jpg or .png format, and README.md as a project report OR
