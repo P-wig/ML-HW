@@ -149,32 +149,32 @@ I evaluated my soulution through a generic R^2 score and visual scatterplot comp
 the results are as follows:
 
 **XGBoost model**
-![unbalanced dataset](./EDA/PCA12.png)
-![balanced dataset](./EDA/PCA12.png)
+![unbalanced dataset](./Results/XGBoosting1.png)
+![balanced dataset](./Results/XGBoosting2.png)
 
 **Linear regression model**
-![unbalanced dataset](./EDA/PCA12.png)
-![balanced dataset](./EDA/PCA12.png)
+![unbalanced dataset](./Results/linear1.png)
+![balanced dataset](./Results/linear2.png)
 
 **Ridge regression model**
-![unbalanced dataset](./EDA/PCA12.png)
-![balanced dataset](./EDA/PCA12.png)
+![unbalanced dataset](./Results/RR1.png)
+![balanced dataset](./Results/RR2.png)
 
 **Lasso regression model**
-![unbalanced dataset](./EDA/PCA12.png)
-![balanced dataset](./EDA/PCA12.png)
+![unbalanced dataset](./Results/LASSO1.png)
+![balanced dataset](./Results/LASSO2.png)
 
 **Polynomial regression model**
-![unbalanced dataset](./EDA/PCA12.png)
-![balanced dataset](./EDA/PCA12.png)
+![unbalanced dataset](./Results/Poly1.png)
+![balanced dataset](./Results/Poly2.png)
 
 **Random forest model**
-![unbalanced dataset](./EDA/PCA12.png)
-![balanced dataset](./EDA/PCA12.png)
+![unbalanced dataset](./Results/RandomForest1.png)
+![balanced dataset](./Results/RandomForest2.png)
 
 **Gradient boosting model**
-![unbalanced dataset](./EDA/PCA12.png)
-![balanced dataset](./EDA/PCA12.png)
+![unbalanced dataset](./Results/GradientBoosting1.png)
+![balanced dataset](./Results/GradientBoosting2.png)
 
 
 
