@@ -131,32 +131,32 @@ I evaluated my soulution through a generic R^2 score and visual scatterplot comp
 the results are as follows:
 
 **XGBoost model**
-* ![unbalanced dataset](./Results/XGBoosting1.png)
-* ![balanced dataset](./Results/XGBoosting2.png)
+* unbalanced dataset ![unbalanced dataset](./Results/XGBoosting1.png)
+* balanced dataset ![balanced dataset](./Results/XGBoosting2.png)
 
 **Linear regression model**
-* ![unbalanced dataset](./Results/Linear1.png)
-* ![balanced dataset](./Results/Linear2.png)
+* unbalanced dataset ![unbalanced dataset](./Results/Linear1.png)
+* balanced dataset ![balanced dataset](./Results/Linear2.png)
 
 **Ridge regression model**
-* ![unbalanced dataset](./Results/RR1.png)
-* ![balanced dataset](./Results/RR2.png)
+* unbalanced dataset ![unbalanced dataset](./Results/RR1.png)
+* balanced dataset ![balanced dataset](./Results/RR2.png)
 
 **Lasso regression model**
-* ![unbalanced dataset](./Results/LASSO1.png)
-* ![balanced dataset](./Results/LASSO2.png)
+* unbalanced dataset ![unbalanced dataset](./Results/LASSO1.png)
+* balanced dataset ![balanced dataset](./Results/LASSO2.png)
 
 **Polynomial regression model**
-* ![unbalanced dataset](./Results/Poly1.png)
-* ![balanced dataset](./Results/Poly2.png)
+* unbalanced dataset ![unbalanced dataset](./Results/Poly1.png)
+* balanced dataset ![balanced dataset](./Results/Poly2.png)
 
 **Random forest model**
-![unbalanced dataset](./Results/RandomForest1.png)
-![balanced dataset](./Results/RandomForest2.png)
+* unbalanced dataset![unbalanced dataset](./Results/RandomForest1.png)
+* balanced dataset ![balanced dataset](./Results/RandomForest2.png)
 
 **Gradient boosting model**
-![unbalanced dataset](./Results/GradientBoosting1.png)
-![balanced dataset](./Results/GradientBoosting2.png)
+* unbalanced dataset ![unbalanced dataset](./Results/GradientBoosting1.png)
+* balanced dataset ![balanced dataset](./Results/GradientBoosting2.png)
 
 Initially the linear model was the baseline model as it was the simplest model to train to the dataset. Afterward the XGBoosting model was incorperated as the baseline as it had a stronger foundation with housing data as prescribed by kaggle.
 
