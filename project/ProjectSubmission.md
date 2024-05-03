@@ -114,8 +114,8 @@ Dimensionality Reduction was considered in this experiment, however was not used
 * Describe the ML methods that you consider using and what is the reason for their choice? 
    * What is the family of machine learning algorithms you are using and why?
 
-The XGBoost model denoted by kaggle is a model that was effective on other housing datasets, and thus sets a baseline for what the experimental models should strive to achieve. So the first model test on this experiments dataset was the XGBoost which provided baseline scores on our dataset, scoring similar to the gradient boosting model from scikit-learn at 0.4780 compared to 0.4791.
-I then experimented with linear models such as linear regression, ridge regression, lasso, and polynomial at base 2, however these models performed the weakest compared to the ensemble models. The ensemble models that were tester were the random forest model and the gradient boosting model provided by scikit-learn. I did attempt using support vector machine regression, however it proved to be massively time consuming with the shape of the experiments dataset and had to be removed from the test runs.
+The XGBoost model denoted by kaggle is a model that was effective on other housing datasets, and thus sets a baseline for improvement or what the experimental models should strive to achieve. So the first model test on this experiments dataset was the XGBoost which provided baseline scores on our dataset to improve upon, scoring similar to the gradient boosting model from scikit-learn at 0.4780 compared to 0.4791.
+I then experimented with linear models such as linear regression, ridge regression, lasso, and polynomial at base 2, however these models performed the weakest compared to the ensemble models. The ensemble models that were tester were the random forest model and the gradient boosting model provided by scikit-learn. I did attempt using support vector machine regression, however it proved to be massively time consuming with the shape of the experiments dataset and had to be removed from the test runs. The ensemble learning models outperfomed the linear models as predicted, as ensemble learning models such as the random forest and gradient boosting  are built to handle non-linearity and multidimensionalism in vastly large datasets.
 
 <Expand and complete for **Project Submission**>
 
@@ -126,6 +126,9 @@ I then experimented with linear models such as linear regression, ridge regressi
 * Make sure to include at least twp models: (1) baseline model, and (2) improvement model(s).  
    * The baseline model  is typically the simplest model that's applicable to that data problem, something we have learned in the class. 
    * Improvement model(s) are available on Kaggle challenge site, and you can research github.com and papers with code for approaches.  
+
+I started with Normalized dataset for the first round of testing on each of the models, afterward I performed a seconds round of testing with a normalized and balanced dataset, utilizing the standard scaler provided by scikit-learn. 
+during the first round of testing on the unbalanced dataset the random forest model outperfomed the XGBoost model, scoring a 0.5603 compared to the 0.4780 by XGBoost. in the following round the scores for all the models noticible decreased except for the random forest model. under the second the of testing the random forest model scored a 0.6112 compared to the 0.2703 by the XGBoost model. Another noticable fact was that although the gradient boosting model performed almost identically to the XGBoost model in the first round with unbalanced data, the gradient boosting model provided by scikit-learn's score only dropped 0.007, where as the XGBoost model's score decreased drastically by roughly 0.200.
 
 ## Experiments 
 
