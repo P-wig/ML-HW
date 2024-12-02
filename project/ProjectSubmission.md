@@ -158,11 +158,17 @@ the results are as follows:
 * unbalanced dataset ![unbalanced dataset](./Results/GradientBoosting1.png)
 * balanced dataset ![balanced dataset](./Results/GradientBoosting2.png)
 
-Initially the linear model was the baseline model as it was the simplest model to train to the dataset. Afterward the XGBoosting model was incorperated as the baseline as it had a stronger foundation with housing data as prescribed by kaggle.
+Initially the linear model was the baseline model as it was the simplest model to train to the dataset.
+ Afterward the XGBoosting model was incorperated as the baseline as it had a stronger foundation with housing data as prescribed by kaggle.
 
-The experiment yielded the random forest regression model as the strongest model for the dataset, as it scored highest in the unbalanced dataset trials by a thin margin at 0.5603 compared to the XGBoost baseline, and scored the highest in the balanced dataset trails by a wider margine with a score of 0.6112.
+The experiment yielded the random forest regression model as the strongest model for the dataset,
+ as it scored highest in the unbalanced dataset trials by a thin margin at 0.5603 compared to the XGBoost baseline,
+  and scored the highest in the balanced dataset trails by a wider margine with a score of 0.6112.
 
-None of the scores in either trial were high enough to be considered a good fit for the dataset, the highest recorded score was 0.6112 by random forest regression, and even then it was still an underfitted model. Suggesting that a new model needs to be evaluated or the current state of the dataset is unoperable and would require bootstrapping of further dimensions of data or just a completely new dataset with with more robust data to train off of.
+None of the scores in either trial were high enough to be considered a good fit for the dataset,
+ the highest recorded score was 0.6112 by random forest regression, and even then it was still an underfitted model.
+  Suggesting that a new model needs to be evaluated or the current state of the dataset is unoperable and would require bootstrapping of further dimensions
+  of data, or just a completely new dataset with with more robust data to train off of.
 
 
 ## Conclusion
